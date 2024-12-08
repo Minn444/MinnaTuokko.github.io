@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8"> <!--Ääkköset näkyviin-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Näkymä mukautuu näytön koon mukaan responsiivisesti-->
+    <meta name="keywords" content="Fila-Ringette, ringette, Fila yhteystiedot, sekajoukkue">
+    <!--Avainsanat hakukoneoptimointia varten-->
+    <meta name="description" content="ringette sekajoukkue">
+    <link rel="stylesheet" href="tyylit.css">
+    <title>Fila-ringette || Yhteystiedot</title> <!--Otsikko välilehdellä, hakukoneoptimointi-->
+</head>
+
+<body>
+
+    <!-- Ylätunniste ja navigointipalkki -->
+    <header>
+        <div class="logo">
+            <h1>Fila-ringette ry</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="vuorot.html">Vuorot</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Kuvabanneri -->
+    <div class="banner">
+        <img src="ringette11.jpg" alt="Ringeten pelikuva">
+    </div>
+
+    <div class="container">
+        <section>
+            <p class="lead">Mikäli kiinnostuit joukkueestamme tai sinulle heräsi kysymyksiä, ota rohkeasti yhteyttä!</p>
+        </section>
+
+        <section>
+            <h3>Joukkueenjohtaja</h3>
+            <img src="jennijanninen1.jpg" class="rounded-img"
+                alt="Pyöreäreunainen kuva joukkueenjohtaja Jenni Jannisesta"> 
+            <p>Jenni Janninen <br> <a href="mailto:jenni.janninen@fila-ringette.fi">jenni.janninen@fila.ringette.fi</a>
+                <br>
+                040 111 222 33
+            </p>
+        </section>
+
+        <section>
+            <h3>Kapteeni</h3>
+            <img src="mikkomakkinen1.jpg" class="rounded-img"
+                alt="Pyöreäreunainen kuva kapteeni Mikko Makkisesta"> 
+            <p>Mikko Makkinen <br> <a href="mailto:mikko.makkinen@fila-ringette.fi">mikko.makkinen@fila-ringette.fi</a>
+                <br>
+                040 112 223 34
+            </p>
+        </section>
+
+        <section>
+            <p>Täytä alla oleva lomake, niin olemme sinuun yhteydessä kahden vuorokauden kuluessa.</p>
+            <form action="/submit" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nimi:</label>
+                    <input type="text" id="name" name="name" placeholder="Kirjoita nimesi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Sähköposti:</label>
+                    <input type="email" id="email" name="email" placeholder="Kirjoita sähköpostisi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Viesti:</label>
+                    <textarea id="message" name="message" placeholder="Kirjoita viestisi" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Lähetä</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Alatunniste -->
+    <footer>
+        <img src="pienilogo.jpg" alt="logo" class="footer-logo">
+        <p class="footer-text">Joukkueenjohtaja <br> Jenni Janninen<br>puh. 040 111 222 33</p>
+        <p class="footer-text">Joukkueen kapteeni<br> Mikko Makkinen <br> puh. 040 112 223 34</p>
+    </footer>
+
+    <div id="loading-spinner"></div> <!--Latauskuvakkeen div-->
+    <script>
+        // Näytä latauskuvake ennen sivun latausta
+        window.addEventListener("beforeunload", function () {
+            document.body.classList.add("loading");
+        });
+    </script>
+
+</body>
+
+</html>

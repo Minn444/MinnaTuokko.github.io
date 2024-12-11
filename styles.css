@@ -117,11 +117,11 @@ body {
     input,
     textarea {
         font-size: 11px;
-
+    }
         button {
             width: 50%;
         }
-    }
+    
     footer {
         padding: 10px;
         row-gap: 10px;
@@ -318,13 +318,13 @@ td {
     width: 100%;
     max-width: 582px;
     table-layout: fixed;
+}
 
     tr, td {
         text-align: center;
         background-color: white;
         padding-top: 2%;
         padding-bottom: 2%;
-}
 }
 
 

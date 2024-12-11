@@ -20,6 +20,82 @@ body {
         font-size: 14px;
         margin: 10px;
     }
+    .banner {
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        /* Keskittää kuvan */
+        margin-bottom: 0;
+        /* Lisää väliä bannerin ja <main>-osion väliin */
+    }
+
+    .banner img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        object-position: right center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #3d3535;
+
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-logo {
+        height: 60px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .contact-form {
+        max-width: 50%;
+        margin: 10px;
+    }
+
+    label {
+        font-size: 14px
+    }
+
+    input,
+    textarea {
+        font-size: 13px;
+    }
+
+    button {
+        width: 50%;
+    }
 }
 
 /*Puhelimet */
@@ -27,6 +103,47 @@ body {
     body {
         font-size: 12px;
         margin: 5px;
+    }
+
+    .contact-form {
+        max-width: 50%;
+        margin: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input,
+    textarea {
+        font-size: 11px;
+
+        button {
+            width: 50%;
+        }
+    }
+    footer {
+        padding: 10px;
+        row-gap: 10px;
+    }
+    .footer-logo {
+        height: 50px;
+    }
+    .footer-text {
+        font-size: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    header {
+        padding: 10px;
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-bottom: 8px;
     }
 }
 
@@ -111,44 +228,6 @@ container {
     
 }
 
-@media (max-width: 768px) {
-    .contact-form {
-        max-width: 50%;
-        margin: 10px;
-    }
-    label{
-        font-size:14
-    }
-
-    input,
-    textarea {
-        font-size: 13px;
-    }
-
-    button {
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-form {
-        max-width: 50%;
-        margin: 10px;
-    }
-
-    label {
-        font-size: 12px;
-    }
-
-    input,
-    textarea {
-        font-size: 11px;
-        button{
-            width:50%;
-        }
-    }
-}
-
 .rounded-img {
     /*kuvien muotoilu pyöreäksi*/
     width: 120px;
@@ -199,13 +278,13 @@ section {
     padding: 20px;
     background-color: whitesmoke;
     /* Vaalea taustaväri */
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     /* Ohut reunus */
     border-radius: 10px;
     /* Kulmien pyöristys */
 }
 
-/* Valinnainen: otsikoille tyylit */
+/*otsikoille tyylit */
 .section h2 {
     text-align: center;
     color: #333;
@@ -240,15 +319,12 @@ td {
     max-width: 582px;
     table-layout: fixed;
 
-    tr {
+    tr, td {
         text-align: center;
         background-color: white;
-    }
-
-    td {
         padding-top: 2%;
         padding-bottom: 2%;
-    }
+}
 }
 
 
